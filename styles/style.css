@@ -1,3 +1,14 @@
 .navbar > .container {
   justify-content: center;
 }
+
+.card {
+  margin: 1.5rem 0;
+  border: 0px solid rgba(10, 10, 10, 0.1);
+  transition: all 0.5s;
+}
+
+.card:hover {
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  box-shadow: 0 1rem 1rem rgba(10, 10, 10, 0.1);
+}
