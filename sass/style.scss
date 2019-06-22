@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Righteous&display=swap');
+
+// Set your brand colors
+$coral:     #ff6f61; // pantone COY 2019!
+$sunflower: #FFE98A; // warning
+$teal:      #37898C; // success
+$aqua:      #C4E9E4; // info
+$pink:      #FF8C8C; // danger
+
+$brown:       #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$heading-font: 'Righteous', cursive;
+$general-font: 'Josefin Sans', 'Roboto', 'Helvetica Neue', sans-serif;
+//$family-sans-serif: $general-font;
+$family-primary: $general-font;
+$family-secondary: $heading-font;
+$title: $heading-font;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $coral;
+$warning: $sunflower;
+$info: $aqua;
+$success: $teal;
+$danger: $pink;
+$link: $teal;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+// $body-background-color: $aqua;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/components/tabs.sass";
