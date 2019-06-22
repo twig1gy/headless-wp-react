@@ -24,16 +24,25 @@ class PostList extends Component {
 
     render(){
         return (
-            <div>
+            <div className="">
                 {this.state.posts.map(post => (
-                   <Link to={`/${post.slug}`} key={post.id}>
-                       <h3>{post.title.rendered}</h3>
-                       <div
-                        dangerouslySetInnerHTML={this.createMarkup(
-                            post.excerpt.rendered
-                        )}
-                        />
-                   </Link>
+                <div className="card">
+                    <Link to={`/${post.slug}`} key={post.id}>
+                        <h3 className="card-header">{post.title.rendered}</h3>
+                        <div className="card-content">
+                        <div className="content"
+                            dangerouslySetInnerHTML={this.createMarkup(
+                                post.excerpt.rendered
+                            )}
+                            />
+                        </div>
+                    </Link>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">Save</a>
+                        <a href="#" class="card-footer-item">Edit</a>
+                        <a href="#" class="card-footer-item">Delete</a>
+                    </footer>
+                </div>
                 ))}
             </div>
         );
